@@ -1,0 +1,46 @@
+project: megascale-training # folder to store all training info 
+name: Model3.21.6_pmpnn_score # file to log training info/runs
+datasets: [megascale] # specify dataset here
+
+training:
+  num_workers: 16
+  learn_rate: 1e-4
+  max_epochs: 50
+  lr_schedule: True
+  train_flag: True # Set to False for inference mode
+  enc_layer: 2 # MPNN encoder layer for embeddings extraction
+  # mpnn_learn_rate: 0.001 
+  use_normalization: False 
+  two_stage: False
+  # use_class_weights: False # whether to use class weights for weighted CE loss in classification mode
+
+finetuning:
+  finetune: False
+  mode: mlp_only # choices: mlp_only | lora_mlp
+  finetune_mlp_only: False # legacy flag; prefer finetuning.mode
+  use_lora_cross_attention: False # enable LoRA adapters inside the cross-attention module
+  lora_rank: 4 # low-rank adapter size for cross-attention projections
+  lora_alpha: 8 # LoRA scaling factor
+  lora_dropout: 0.05 # LoRA dropout on adapter input
+  pretrained_checkpoint: "/home/user/Documents/ProteinMPNN/checkpoints/Model3.21.6-MLP-FT_gap100_epoch=15_val_ddG_spearman=0.68.ckpt" # path to pretrained checkpoint
+  num_finetune_epochs: 30
+  FT_learn_rate: 1e-5
+
+esm_model_name: "esm2_t33_650M_UR50D"
+topk_mutations: 1
+neigh_shells: 2 # number of neighbor shells to consider for MPNN embeds extraction
+
+model:
+  attn_hidden_dim: 1024
+  num_heads: 8
+  attn_dropout: 0.1
+  mlp_dropout: 0.3
+  esm_batch_size: 16  # 16: Monomer; 4: SKEMPI
+  prediction_batch_size: 16  # 16: Monomer; 4: SKEMPI
+  subtract_mut: True
+  num_final_layers: 2
+  freeze_weights: True
+  load_pretrained: True
+  use_oligomer_esm: False # whether to use oligomeric ESM-2 model for embeddings extraction
+  require_oligomer_position_ids: True # whether to require position ids for oligomeric ESM-2 model (only needed if using oligomeric ESM-2)
+  esm_chain_gap: 1000 # gap between chains for oligomeric ESM-2 model 
