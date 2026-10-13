@@ -1,11 +1,13 @@
 # OligoStab
 
-OligoStab utilises a graph neural network (ProteinMPNN) and protein language model (ESM-2) to predict stabilising mutations in oligomeric proteins.
+OligoStab integrates structural and sequential features to predict changes in thermostability due to single-point mutations. The model is adapted to oligomeric proteins using a positional jump modification in amino acid sequence processing and a fine-tuning strategy. 
 
-### Installation
+## Installation
 
-### Inference
+## Inference
 
-### Training
+## Training
 
-### Dataset Availability 
+## Benchmarking
+
+## Dataset Availability 
