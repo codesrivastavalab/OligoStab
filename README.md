@@ -5,8 +5,9 @@ OligoStab integrates structural and sequential features to predict changes in th
 
 ## Installation
 To install OligoStab on your local system clone this repository:
-
+```
 git clone https://github.com/codesrivastavalab/OligoStab.git
+```
 
 
 ## Inference
