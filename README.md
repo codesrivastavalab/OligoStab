@@ -7,8 +7,13 @@ OligoStab integrates structural and sequential features to predict changes in th
 To install OligoStab on your local system clone this repository:
 ```
 git clone https://github.com/codesrivastavalab/OligoStab.git
+cd OligoStab
 ```
-
+Create and activate environemnt:
+```
+conda env create -f requirements.yaml
+conda activate oligostab
+```
 
 ## Inference
 
