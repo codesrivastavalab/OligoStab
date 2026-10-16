@@ -14,6 +14,13 @@ Create and activate environemnt:
 conda env create -f requirements.yaml
 conda activate oligostab
 ```
+### Single PDB with site-saturation mutagenesis
+
+
+### Single PDB with specified mutation list in a CSV
+
+
+### Multiple PDBs
 
 ## Inference
 
