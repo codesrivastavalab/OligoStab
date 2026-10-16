@@ -1,7 +1,7 @@
 platform:
   accel: "gpu"
-  cache_dir: "/home/user/Documents/ProteinMPNN/stability_cache"
-  proteinmpnn_dir: "/home/user/Documents/ProteinMPNN/ProteinMPNN"
+  cache_dir: "/home/user/Documents/OligoStab/stability_cache"
+  proteinmpnn_dir: "/home/user/Documents/OligoStab/ddg_pipeline/protein_mpnn_utils.py"
 
 data_loc:
         megascale_csv: "/media/user/DATA/raghav/Documents/ProteinMPNN/megascale_upload/Processed_K50_dG_datasets/Processed_K50_dG_datasets/Tsuboyama2023_Dataset2_Dataset3_20230416.csv"
