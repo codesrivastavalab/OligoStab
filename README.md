@@ -19,13 +19,14 @@ conda activate oligostab
 Run inside `ddg_pipeline` directory.
 Use the monomer model checkpoint for single chain proteins and oligomer checkpoint for protein complexes. 
 ### Single PDB with site-saturation mutagenesis
+```
 python test_model.py \
 --checkpoint path-to-model-checkpoint.ckpt \
 --pdb input-PDB.pdb \
 --all-mutations 
 --config configs/config.yaml \
 --output pred-results/file-name.csv
-
+```
 
 ### Single PDB with specified mutation list in a CSV
 The 
@@ -40,6 +41,7 @@ python test_model.py \
 ```
 
 ### Multiple PDBs
+```
 python test_model.py 
 --checkpoint path-to-model-checkpoint.ckpt \
 --csv mutation-list.csv \
@@ -47,6 +49,7 @@ python test_model.py
 --mutation-column mutation \
 --config configs/config.yaml \
 --output pred-results/file-name.csv
+```
 
 The output CSV from `test_model.py` includes the following columns:
 - pdb
