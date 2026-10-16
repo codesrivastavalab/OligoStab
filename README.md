@@ -52,9 +52,12 @@ python test_model.py
 ```
 
 The output CSV from `test_model.py` includes the following columns:
-- pdb
-- mutation_str
-- predicted_ddG
+- pdb - PDB ID (eg. 3VUB)
+- position - Residue position in 0-index
+- wildtype - Wildtype amino acid
+- mutation - Mutant amino acid
+- mutation_str - Mutation label (eg. R2M)
+- predicted_ddG - Predicted $\Delta \Delta G$ in kcal/mol
 
 ## Training
 
