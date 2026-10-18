@@ -28,7 +28,7 @@ pip install "huggingface_hub>=0.34,<1.0
 hf download Raghav0573/oligostab-weights oligostab-FT.ckpt --local-dir ./weights
 ```
 
-Datasets used for training, testing and benchmarking can be accessed from hugging face: [Datasets](https://huggingface.co/datasets/Raghav0573/oligostab-data/tree/main)
+Datasets used for training, testing and benchmarking can be accessed from hugging face: [Datasets](https://huggingface.co/datasets/Raghav0573/oligostab-data/tree/main) \\
 To download the dataset use the follwing command
 ```
 hf download Raghav0573/oligostab-data \
