@@ -14,6 +14,29 @@ Create and activate environemnt:
 conda env create -f requirements.yaml
 conda activate oligostab
 ```
+The pre-trained monomer and oligomer fine-tuned weights for OligoStab can be download from Hugging Face: [OligoStab weights](https://huggingface.co/Raghav0573/oligostab-weights/tree/main)
+- oligostab-monomer.ckpt: Monomer weights
+- oligostab-FT.ckpt: Oligomer weights
+
+The following steps can also be used to download weights directly from your terminal:
+1. Install hugging face hub in your terminal
+```
+pip install "huggingface_hub>=0.34,<1.0
+```
+2. Download the weights
+```
+hf download Raghav0573/oligostab-weights oligostab-FT.ckpt\ 
+--local-dir ./weights
+```
+
+Datasets used for training, testing and benchmarking can be accessed from hugging face: [Datasets](https://huggingface.co/datasets/Raghav0573/oligostab-data/tree/main)
+To download the dataset use the follwing command
+```
+hf download Raghav0573/oligostab-data \
+--repo-type dataset \
+--include "<dataset_name>/**" \       
+--local-dir ./data
+```
 
 ## Inference
 Run inside `ddg_pipeline` directory.
