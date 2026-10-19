@@ -9,7 +9,7 @@ To install OligoStab on your local system clone this repository:
 git clone https://github.com/codesrivastavalab/OligoStab.git
 cd OligoStab
 ```
-Create and activate environemnt:
+Create and activate environemnt (if you are using Apple silicon chip, use `requirements-mac.yaml`):
 ```
 conda env create -f requirements.yaml
 conda activate oligostab
