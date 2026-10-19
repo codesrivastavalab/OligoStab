@@ -23,6 +23,7 @@ dependencies:
   - python==3.12
   - joblib
   - cudatoolkit=11.3
+  - pip
   - pip:
     - fair-esm  # Required for sequence embedding extraction
     - lightning-utilities==0.15.2
