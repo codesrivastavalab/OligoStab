@@ -1,4 +1,4 @@
-name: oligostab-mac
+name: oligostab
 channels:
   - pytorch
   - conda-forge
