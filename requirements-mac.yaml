@@ -1,0 +1,25 @@
+name: oligostab-mac
+channels:
+  - pytorch
+  - conda-forge
+  - bioconda
+  - anaconda
+dependencies:
+  - python==3.12
+  - pytorch
+  - torchvision
+  - torchaudio
+  - torchmetrics
+  - pytorch-lightning
+  - biopython
+  - wandb
+  - tqdm
+  - pandas
+  - numpy
+  - omegaconf
+  - joblib
+  - pip
+  - pip:
+    - fair-esm  # Required for sequence embedding extraction
+    - lightning-utilities==0.15.2
+    - pydantic==2.12.5
