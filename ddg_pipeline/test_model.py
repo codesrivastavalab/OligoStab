@@ -59,12 +59,7 @@ def load_trained_model(checkpoint_path, mode="regression", config_path="configs/
         device: torch device
         config: OmegaConf config
     """
-    # Import the appropriate model class
-    if mode == "classification":
-        from train_ddg_model_classification import CompiledModelPL
-    else:
-        # from train_ddg_model_regression import CompiledModelPL
-        from ddg_pipeline.train_ddG_model import CompiledModelPL  
+    from train_ddG_model import CompiledModelPL  
     
     # Load config
     config = OmegaConf.load(config_path)
@@ -654,7 +649,7 @@ def test_all_mutations_single_pdb(checkpoint_path, pdb_path, mode="regression", 
         pdb,
         mut_list=mut_list,
         device=device,
-        use_normalization=use_normalization,
+        use_normalization=use_normalization, 
     )
     mutant_entries = [(label, seq) for (label, seq) in mut_list if label != 'WT']
 
