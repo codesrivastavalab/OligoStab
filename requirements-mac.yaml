@@ -16,6 +16,7 @@ dependencies:
   - tqdm
   - pandas
   - numpy
+  - transformers
   - omegaconf
   - joblib
   - pip

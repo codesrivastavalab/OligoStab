@@ -20,6 +20,7 @@ dependencies:
   - tqdm
   - pandas
   - numpy
+  - transformers
   - omegaconf
   - joblib
   - cudatoolkit=11.3
