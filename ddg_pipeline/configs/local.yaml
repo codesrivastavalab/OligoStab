@@ -4,10 +4,10 @@ platform:
   proteinmpnn_dir: "/home/user/Documents/OligoStab/ddg_pipeline/protein_mpnn_utils.py"
 
 data_loc:
-        megascale_csv: "/media/user/DATA/raghav/Documents/ProteinMPNN/megascale_upload/Processed_K50_dG_datasets/Processed_K50_dG_datasets/Tsuboyama2023_Dataset2_Dataset3_20230416.csv"
-        megascale_splits: "/media/user/DATA/raghav/Documents/ProteinMPNN/megascale_upload/mega_splits.pkl"
-        megascale_pdbs: "/media/user/DATA/raghav/Documents/ProteinMPNN/megascale_upload/AlphaFold_model_PDBs/AlphaFold_model_PDBs"
-        # megascale_allowlist_fasta: /home/user/Documents/ProteinMPNN/dataset-filtering/comb_train_clean.fasta
+        megascale_csv: "/media/user/DATA/raghav/Documents/OligoStab/megascale_upload/Processed_K50_dG_datasets/Processed_K50_dG_datasets/Tsuboyama2023_Dataset2_Dataset3_20230416.csv"
+        megascale_splits: "/media/user/DATA/raghav/Documents/OligoStab/megascale_upload/mega_splits.pkl"
+        megascale_pdbs: "/media/user/DATA/raghav/Documents/OligoStab/megascale_upload/AlphaFold_model_PDBs/AlphaFold_model_PDBs"
+        # megascale_allowlist_fasta: /home/user/Documents/OligoStab/dataset-filtering/comb_train_clean.fasta
         
         fireprot_csv: "/home/user/Documents/ProteinMPNN/datasets/fireprot_upload/csvs/4_fireprotDB_bestpH.csv"
         fireprot_splits: "/home/user/Documents/ProteinMPNN/datasets/fireprot_upload/csvs/fireprot_splits.pkl"
@@ -28,3 +28,5 @@ data_loc:
         skempi_csv: "/media/user/DATA/raghav/Documents/ProteinMPNN/SKEMPI2/SKEMPI2_single_point_filtered.csv"
         skempi_splits: "/media/user/DATA/raghav/Documents/ProteinMPNN/SKEMPI2/skempi2_pdb_seqs_splits.pkl"
         skempi_pdbs: "/media/user/DATA/raghav/Documents/ProteinMPNN/SKEMPI2/filtered_PDBs/"
+
+       
