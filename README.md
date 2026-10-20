@@ -52,15 +52,15 @@ python test_model.py \
 ```
 
 ### Single PDB with specified mutation list in a CSV
-The 
+ 
 ```
 python test_model.py \
---checkpoint path-to-model-checkpoint.ckpt \
---pdb input-PDB.pdb \
---csv mutation-list.csv \
+--checkpoint ../weights/oligostab-FT.ckpt \ 
+--pdb ../example/3vub_dimer_mod.pdb \
+--csv ../example/RV_data_muts.csv \ 
 --mutation-column mutation \
 --config configs/config.yaml \
---output pred-results/file-name.csv
+--output pred-results/CcdB-test.csv
 ```
 
 ### Multiple PDBs
