@@ -21,6 +21,7 @@ dependencies:
   - pandas
   - numpy
   - transformers
+  - bitsandbytes
   - omegaconf
   - joblib
   - cudatoolkit=11.3
