@@ -13,7 +13,7 @@ from pytorch_lightning.loggers import WandbLogger
 from torchmetrics import MeanSquaredError, R2Score, SpearmanCorrCoef, PearsonCorrCoef
 from omegaconf import OmegaConf
 
-from compiled_model_multimer_ablation import StabilityPredictionModel
+from oligostab_model import StabilityPredictionModel
 from datasets import FireProtDataset, MegaScaleDataset, Skempi2Dataset, ComboDataset
 from transformers import get_cosine_schedule_with_warmup
 import bitsandbytes as bnb
