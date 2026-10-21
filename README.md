@@ -19,7 +19,7 @@ The pre-trained monomer and oligomer fine-tuned weights for OligoStab can be dow
 - Oligomer weights: oligostab-FT.ckpt
 
 The following steps can also be used to download weights directly from your terminal:
-1. Install Hugging Face Hub in your terminal
+1. Install Hugging Face Hub in your terminal, if not already present
 ```
 pip install "huggingface_hub>=0.34,<1.0"
 ```
