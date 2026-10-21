@@ -6,9 +6,9 @@ channels:
   - anaconda
 dependencies:
   - python==3.12
-  - pytorch
-  - torchvision
-  - torchaudio
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
   - torchmetrics
   - pytorch-lightning
   - biopython
@@ -16,12 +16,14 @@ dependencies:
   - tqdm
   - pandas
   - numpy
-  - transformers
   - bitsandbytes
   - omegaconf
   - joblib
   - pip
   - pip:
     - fair-esm  # Required for sequence embedding extraction
+    - transformers==4.57.1
+    - huggingface_hub>=0.34,<1.0
     - lightning-utilities==0.15.2
     - pydantic==2.12.5
+    - pydantic-core==2.41.5
