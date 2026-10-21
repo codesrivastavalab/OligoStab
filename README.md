@@ -38,6 +38,9 @@ hf download Raghav0573/oligostab-data \
 --local-dir ./data
 ```
 
+## Google Colab implmentation
+For a quick, user-friendly way to generate predictions using OligoStab without any installations use this [Colab link](https://colab.research.google.com/drive/11nfgqQWshSq_QC8XewXFdApO5T25A3Wu?usp=sharing).
+
 ## Inference
 Run inside `ddg_pipeline` directory.
 Use the monomer model checkpoint for single chain proteins and oligomer checkpoint for protein complexes. 
